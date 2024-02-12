@@ -55,7 +55,7 @@ class Hero {
  let TipoAtaque;
 
  aventura.atacar ();
- console.atacar(); 
+
 
 /*
 
