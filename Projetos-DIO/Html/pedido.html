@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>Pedido de Pizza</title>
+</head>
+<body>
+    <form method="post" >
+        <h3>Faça seu pedido de Pizza</h3>
+        <p>Selecione o sabor da Pizza:</p>
+            <input type="radio" name="Sabor-da-Pizza" value="Calabreza"> Calabreza <br>
+            <input type="radio" name="Sabor-da-Pizza" value="Quatro Queijos"> Quatro Queijos <br>
+            <input type="radio" name="Sabor-da-Pizza" value="Bahiana"> Bahiana <br>
+            <input type="radio" name="Sabor-da-Pizza" value="Filé"> Filé <br>
+
+        <p>Quais Opcionais você deseja?</p>
+            <input type="checkbox" name="Opcional[]" value=" Queijo"> + Queijo <br>
+            <input type="checkbox" name="Opcional[]" value=" Calabreza"> + Calabreza <br>
+            <input type="checkbox" name="Opcional[]" value=" Cebola"> + Cebola <br>
+            <input type="checkbox" name="Opcional[]" value=" Azeitona"> + Azeitona <br>
+        
+        <p>Deseja borda recheada?</p>
+            <input type="radio" name="borda" value="Sim"> Sim <br>
+            <input type="radio" name="borda" value="Não"> Não <br>
+            
+        <p>Bebida?</p>   
+            Coca-Cola <input type="number" value="Coca-Cola" min="0" max="10" style="margin-left:5px"><br>
+            Suco  <input type="number" value="Suco" min="0" max="10" style="margin-left:41px"><br>
+            Agua  <input type="number" value="Agua" min="0" max="10" style="margin-left:38px"><br>        
+            Nenhum  <input type="number" value="Nenhum" min="0" max="10" style="margin-left:17px"><br> <br>
+        
+        <p>Selecione seu brinde:</p>
+            <select name="seleção">
+                <option value="">Selecione seu Chaveiro</option>
+                <option value="Chaveiro Pizza" selected>Chaveiro Pizza</option>
+                <option value="Chaveiro Lanche">Chaveiro Lanche</option>
+                <option value="Chaveiro Refrigerante">Chaveiro Refrigerante</option>
+                <option value="Chaveiro Trofeu">Chaveiro Trofeu</option>
+            </select>
+            <br>
+
+        <label>Informações Complesmentares de seu Pedido:</label>
+        <textarea name="Complemento" cols="30" rows="2"></textarea>
+            <br>
+            <button type="submit"> Enviar Pedido</button>
+            <button type="reset">Limpar</button>
+
+    </form>
+    
+</body>
+</html>
