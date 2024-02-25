@@ -1,9 +1,47 @@
 <html>
   <head>
     <title>Lidima Contabilidade</title>
-    <body>
+    
+    <style>
+      .diferenciais {
+        color: rgb(34, 0, 128);
+      }
+      .img{
+        border: radius 5cap; 
+        border-color: aqua;
+      } 
+      table {
+        -webkit-box-shadow: 17px 13px 15px 4px rgba(140,173,222,0.64);
+        -moz-box-shadow: 17px 13px 15px 4px rgba(140,173,222,0.64);
+        box-shadow: 17px 13px 15px 4px rgba(140,173,222,0.64);
+        border: solid 1px gray;
+      }
+      table thead th {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+      table tfoot td {
+        background-color: lightgray;
+      }
+      table tbody tr:nth-child(even) td {
+        background-color: rgb(252, 250, 243);
+      }
+      table tr:nth-child(even){
+        background-color: rgb(236, 232, 232);
+      }
+      table tr:hover td {
+        background-color: rgba(160, 170, 197, 0.719);
+        cursor:pointer;
+      }
+    </style>
+  </head> 
+    <header>
       <h1 id="Inicio">Inicio</h1>
-        <h2>
+      <p style="margin-right: 10px;"><img src="/Projetos-DIO/Html/Lidima.png">
+      </p>  
+    </header>
+    <body>
+      <h2>
           <ul>
             <li><a href="#Nossos-Diferenciais">Nossos Diferenciais </a></li>
             <li><a href="#Sobre-Nós">Sobre Nós</a></li>
@@ -14,7 +52,7 @@
           </ul>
         </h2>
 
-        <h2 id="Nossos-Diferenciais">Nossos Diferenciais</h2>
+        <h2 id="Nossos-Diferenciais"> <span class="Diferenciais">Nossos Diferenciais</span></h2>
           <p>A Credibilidade que você procura com a qualidade que você precisa</p>
           <hr>  
             <ul>
@@ -54,17 +92,60 @@
               </ul>
 
         <h2 id="Nossa-Estrutura">Nossa Estrutura</h2>
-          <p>Oferecemos uma sólida estrutura física aos nossos clientes.</p>
-            <ul>
-              <li>Administrativo</li>
-              <li>Financeiro</li>
-              <li>Recursos Humanos</li>
-              <li>Rural</li>
-              <li>Fiscal</li>
-              <li>Contábil</li>
-              <li>Expediente</li>
-            </ul>
         
+      <table width="400" align="center" cellspacing ="0" cellpadding="3" style="margin-left: 1px">
+              
+          <caption>Oferecemos uma sólida estrutura física aos nossos clientes.</caption>
+          
+          <thead>
+            <tr>
+              <th colspan="2">Nossa Estrutura</th>
+            </tr>
+            <tr>
+              <th title="Departamento do Escritório">Setor</th>
+              <th>Contato</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Administrativo</td>
+              <td>(65)3266-5034</td>
+            </tr>
+            <tr>
+              <td>Financeiro</td>
+              <td>(65)3266-6953</td>
+            </tr>
+            <tr>
+              <td>Recursos Humanos</td>
+              <td>(65)3266-5034</td>
+            </tr>
+            <tr>
+              <td>Rural</td>
+              <td>(65)3266-6953</td>
+            </tr>
+            <tr>
+              <td>Fiscal</td>
+              <td>(65)3266-5034</td>
+            </tr>
+            <tr>
+              <td>Contabil</td>
+              <td>(65)3266-6953</td>
+            </tr>
+            <tr>
+              <td>Expedie</td>
+              <td>(65)3266-5034</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>-----</td>
+            </tr>
+          </tfoot>
+        </table>
+                 
         <h2 id="Noticias">Noticias Contábeis</h2>
           <p>Fique informado com as últimas notícias.</p>
           
@@ -80,5 +161,5 @@
 
         <h3><a href="#Inicio">(Inicio)</a></h3>
         </body>
-    </head> 
+   
  </html>
