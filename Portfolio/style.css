@@ -10,7 +10,7 @@ html {
 a {
     color: #fff;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 2s;
 }
 
 a:hover {
@@ -40,6 +40,14 @@ a:hover {
 .ulMenuSuperior li {
     letter-spacing: 3px;
     margin-left: 30px;
+   
+}
+.ulMenuSuperior li:hover {
+   
+    font-size: 40px;
+    border-radius: 10%;
+    border-bottom: 2px solid rgb(242, 243, 243);
+
 }
 .divMenuRecolhido {
     display: none;
@@ -56,6 +64,7 @@ a:hover {
     transform: translateX(0);
 }
 
+
 main {
     text-align: center;
     color:  rgb(242, 243, 243);
@@ -64,18 +73,18 @@ main {
 
 }
 
-footer p {
-
-    color: white;
-    text-align:center;
+footer {
+   
     border-top: 1px solid #333;
-    bottom: 0;
+    text-align: center;
+    color: white;
+    bottom:0;
     left: 0;
     height: 40px;
     position: fixed;
     width: 100%;
-    
-    
+    background-color: #0a0a0a;
+    padding: 10px;
 }
 
 
